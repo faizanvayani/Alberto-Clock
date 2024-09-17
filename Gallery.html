@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caramel&family=Chela+One&family=Diplomata&family=Ewert&family=Lumanosimo&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Gallery.css">
+    
+</head>
+
+<body>
+    <!-- logo start -->
+    <div class="d-flex justify-content-around ms-3">
+        <a href="Home.html"> <img src="Image/logo.png" class="counter " alt="" height="200px" width="200px"></a>
+        <div class="logo-head">
+    
+            <div class="heading-name  ">ALBERTO CLOCK</div>
+        </div>
+        <!-- clock counter start -->
+        <div class="container">
+            <div class="row">
+                <div class="counter blue">
+    
+    
+    
+                    <div class="clockbox">
+                        <svg id="clock" viewBox="0 0 600 600">
+                            <g id="face">
+                                <circle class="circle" cx="300" cy="300" r="253.9" />
+                                <path class="hour-marks"
+                                    d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6" />
+                                <circle class="mid-circle" cx="300" cy="300" r="16.2" />
+                            </g>
+                            <g id="hour">
+                                <path class="hour-arm" d="M300.5 298V142" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                            </g>
+                            <g id="minute">
+                                <path class="minute-arm" d="M300.5 298V67" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                            </g>
+                            <g id="second">
+                                <path class="second-arm" d="M300.5 350V55" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                            </g>
+                        </svg>
+                    </div>
+    
+                    <div class="counter-icon">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="text-uppercase">Visiter counts</h3>
+                        <span class="counter-value" id="CounterVisitor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- clock counter end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bor text-center">
+        <div class="container-fluid text-center">
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item text-center">
+                        <a class="nav-link active nav-colour text-uppercase text-center" aria-current="page"
+                            href="Home.html">Home</a>
+                    </li>
+                    <!-- button wall clock -->
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link text-uppercase text-center nav-colour text-nowrap" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wall Clock's
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="Analog Clock.html">Analog Clocks</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="Digital Clock.html">Digital Clocks</a>
+                            </li>
+                            <li><a class="dropdown-item text-uppercase" href="Table Clock .html">Table clocks</a></li>
+                        </ul>
+                    </li>
+                    <!-- button wall clock -->
+                    <!-- watches button -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Watches
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="men watches.html">Mens</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="women watches .html">Womens</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="kids watches.html">Kids</a></li>
+                        </ul>
+                    </li>
+                    <!-- watches button -->
+                    <!-- gallary button -->
+                    <li class="nav-item ">
+                        <a class="nav-link nav-colour text-uppercase" href="Gallery.html">Gallery</a>
+                    </li>
+                    <!-- gallary button -->
+                    <!-- Brands button -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="michael kors.html">Michael Kors</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="rolex watches.html">Rolex</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="citizen watches.html">Citizen
+                                    Eco-Drive</a></li>
+    
+                        </ul>
+                    </li>
+                    <!-- Brands button -->
+                    <!-- comtact us -->
+                    <li class="nav-item text-center">
+                        <a class="nav-link nav-colour text-uppercase" href="Contact Us.html">Contact US</a>
+                    </li>
+                    <!-- comtact us -->
+    
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-5 ser-box" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
+   <!-- Gallary Section Start -->
+
+<section class="gallary">
+    <div class="heading">
+        <h2 class="services">OUR GALLARY</h2>
+        
+    </div>
+    <h3>VINTAGE</h3>
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/gallery 01.png" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/gallery 02.png" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/gallery 03.png" alt="">
+        </div>
+    </div>
+
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/gallery04.png" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/gallery05.png" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/gallery06.png" alt="">
+        </div>
+    </div>
+
+    <div class="heading">
+        
+        
+    </div>
+    <h3>LUXURY</h3>
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/Luxury 01.jpg" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/Luxury 02.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/Luxury 03.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/Luxury 04.jpg" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/Luxury 05.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/Luxury 06.jpg" alt="">
+        </div>
+    </div>
+
+
+    <h3>SMART WATCHES</h3>
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/Smart Watches 01.jpg" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/Smart Watches 02.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/Smart Watches 03.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="gallary-card">
+        <div class="row">
+            <img src="Image/Smart Watches 04.jpg" alt="" >
+        </div>
+        <div class="row">
+            <img src="Image/Smart Watches 05.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="Image/Smart Watches 06.png" alt="">
+        </div>
+    </div>
+
+
+
+<h3>MEN WATCHES</h3>
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/menwatch 01.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/menwatch 02.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/menwatch 03.jpg" alt="">
+    </div>
+</div>
+
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/menwatch 04.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/menwatch 05.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/menwatch 06.jpg" alt="">
+    </div>
+</div>
+
+<h3>WOMEN WATCHES</h3>
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/womenwatches 01.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/womenwatches 02.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/womenwatches 03.jpg" alt="">
+    </div>
+</div>
+
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/womenwatches 04.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/Smart Watches 05.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/womenwatches 06.jpg" alt="">
+    </div>
+</div>
+
+
+<h3>KIDS WATCHES</h3>
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/kidswatches 01.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/kidswatches 02.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/kidswatches 03.jpg" alt="">
+    </div>
+</div>
+
+<div class="gallary-card">
+    <div class="row">
+        <img src="Image/kidswatches 04.jpg" alt="" >
+    </div>
+    <div class="row">
+        <img src="Image/kidswatches 05.jpg" alt="">
+    </div>
+    <div class="row">
+        <img src="Image/kidswatches 06.jpg" alt="">
+    </div>
+</div>
+</section>
+<!-- Gallary Section End -->
+
+
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+                <h3>Alberto Clocks</h3>
+                <li><a href="About Us .html">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="#">Term & Condition</a></li>
+            </div>
+            <div class="row">
+                <h3>Customer Service</h3>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Installments Plan</a></li>
+                <li><a href="#">E-Warranty Activation</a></li>
+            </div>
+            <div class="mag-bott">
+                <h3>Secure Payment Methods</h3>
+                <img src="Image/1 link.jpg" alt="" height="40" width="40">
+                <img src="Image/mastercard.jpg" alt="" height="40" width="40">
+                <img src="Image/visa.jpg" alt="" height="40" width="40">
+                <div class="socail-links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+    </footer>
+    <!-- footer end -->
+    <script async> const HOURHAND = document.querySelector("#hour");
+        const MINUTEHAND = document.querySelector("#minute");
+
+        const SECONDHAND = document.querySelector("#second");
+
+        var date = new Date();
+        console.log(date);
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
+
+        let hrPosition = (hr * 360 / 12) + (min * (360 / 60) / 12);
+        let minPosition = (min * 360 / 60) + (sec * (360 / 60) / 60);
+        let secPosition = sec * 360 / 60;
+
+        function runThetime() {
+            hrPosition = hrPosition + (3 / 360);
+            minPosition = minPosition + (6 / 60);
+            secPosition = secPosition + (6);
+
+            HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+            MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+            SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+        }
+
+        var interval = setInterval(runThetime, 1000);
+        </script>
+  
+    <!-- clock counter end -->
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("on_load_counter", n);
+
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+
+    </script>
+</body>
+
+</html>

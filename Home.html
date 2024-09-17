@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caramel&family=Chela+One&family=Diplomata&family=Ewert&family=Lumanosimo&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="media queries.css">
+</head>
+
+<body>
+    <!-- logo start -->
+    <div class="d-flex justify-content-around ms-3">
+        <a href="Home.html"> <img src="Image/logo.png" class="counter " alt="" height="200px" width="200px"></a>
+        <div class="logo-head">
+
+            <div class="heading-name  ">ALBERTO CLOCK</div>
+        </div>
+        <!-- clock counter start -->
+        <div class="container">
+            <div class="row">
+                <div class="counter blue">
+                    <div class="clockbox">
+                        <svg id="clock" viewBox="0 0 600 600">
+                            <g id="face">
+                                <circle class="circle" cx="300" cy="300" r="253.9" />
+                                <path class="hour-marks"
+                                    d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6" />
+                                <circle class="mid-circle" cx="300" cy="300" r="16.2" /> </g>
+                            <g id="hour">
+                                <path class="hour-arm" d="M300.5 298V142" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" /></g>
+                            <g id="minute">
+                                <path class="minute-arm" d="M300.5 298V67" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" /> </g>
+                            <g id="second">
+                                <path class="second-arm" d="M300.5 350V55" />
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="counter-icon">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="text-uppercase">Visiter counts</h3>
+                        <span class="counter-value" id="CounterVisitor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- clock counter end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bor text-center">
+        <div class="container-fluid text-center">
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item text-center">
+                        <a class="nav-link active nav-colour text-uppercase text-center" aria-current="page"
+                            href="Home.html">Home</a>
+                    </li>
+                    <!-- button wall clock -->
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link text-uppercase text-center nav-colour text-nowrap" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wall Clock's
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="Analog Clock.html">Analog Clocks</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="Digital Clock.html">Digital Clocks</a>
+                            </li>
+                            <li><a class="dropdown-item text-uppercase" href="Table Clock .html">Table clocks</a></li>
+                        </ul>
+                    </li>
+                    <!-- button wall clock -->
+                    <!-- watches button -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Watches
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="men watches.html">Mens</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="women watches .html">Womens</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="kids watches.html">Kids</a></li>
+                        </ul>
+                    </li>
+                    <!-- watches button -->
+                    <!-- gallary button -->
+                    <li class="nav-item ">
+                        <a class="nav-link nav-colour text-uppercase" href="Gallery.html">Gallery</a>
+                    </li>
+                    <!-- gallary button -->
+                    <!-- Brands button -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="michael kors.html">Michael Kors</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="rolex watches.html">Rolex</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="citizen watches.html">Citizen
+                                    Eco-Drive</a></li>
+                        </ul>
+                    </li>
+                    <!-- Brands button -->
+                    <!-- comtact us -->
+                    <li class="nav-item text-center">
+                        <a class="nav-link nav-colour text-uppercase" href="Contact Us.html">Contact US</a>
+                    </li>
+                    <!-- comtact us -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-5 ser-box" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="banner">
+        <h1>Alberto Watch Company is a full-service watch repair, appraisal, and retail store</h1>
+    </div>
+    <!-- clock counter start -->
+    <!-- Services Section Start -->
+    <section class="services">
+        <div class="heading">
+            <h3>Services</h3>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <i class="fas fa-globe-asia"></i>
+                <div class="card-body">
+                    <h3><a href="Around The World.html">Around The World</a></h3>
+                    <p>worldwide service was founded in 2005 to help people around the world . Ask them if they will
+                        repair your clock, also ask
+                        them for their prices and for shipping instructions.
+                        Please do not simply send your clock to an address on this list!</p>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-plane"></i>
+                <div class="card-body">
+                    <h3><a href="">Fastest Delivery</a></h3>
+                    <p>Airway Numbers are used by Global Express to categorize and trace packages as they progress
+                        through the system to their destination. Global Express automatically assigns a tracking number
+                        to your shipment for bookings made online.</p>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-microchip"></i>
+                <div class="card-body">
+                    <h3><a href="">Technology</a></h3>
+                    <p>clock, mechanical or electrical device other than a watch for displaying time. A clock is a
+                        machine in which a device that performs regular movements in equal intervals of time is linked
+                        to a counting mechanism that records the number of movements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Gallary Section Start -->
+    <section class="gallary">
+        <div class="heading">
+            <h3><a href="Gallery.html">OUR GALLARY</a> </h3>
+        </div>
+        <div class="gallary-card">
+            <div class="row">
+                <img src="Image/galler 1.jpeg" alt="">
+            </div>
+            <div class="row">
+                <img src="Image/galler p2.jpeg" alt="">
+            </div>
+            <div class="row">
+                <img src="Image/galler p3.jpeg" alt="">
+            </div>
+            <div class="row">
+                <img src="Image/galler p4.jpeg" alt="">
+            </div>
+            <div class="row">
+                <img src="Image/galler p5.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Gallary Section End -->
+    <!--wall clock Start -->
+    <div class="head-clock">
+        <h2>Wall Clocks</h2>
+    </div>
+    <div class="brands-card">
+        <a href="Analog Clock.html">
+            <div class="box01">
+                <img src="Image/wallclock home.png" alt="" height="290" width="290">
+                <h3>Analog Clock</h3>
+                <p>Don't reset the clock again when the time changes, this one does it automatically</p> </a>
+    </div>
+    <a href="Digital Clock.html">
+        <div class="box01">
+            <img src="Image/walldigital 1.jpg" alt="" height="290" width="290">
+            <h3>Digital Clock</h3>
+            <p>Don't reset the clock again when the time changes, this one does it automatically</p>
+    </a>
+    </div>
+    <a href="Table Clock .html">
+        <div class="box01">
+            <img src="Image/table clock 01.jpg" alt="" height="290" width="290">
+            <h3>Table Clock</h3>
+            <p>Don't reset the clock again when the time changes, this one does it automatically</p>
+    </a>
+    </div>
+    </div>
+    <!-- wall clock End -->
+    <!--watches Start -->
+    <div class="head-clock">
+        <h2>WATCHES</h2>
+    </div>
+    <div class="brands-card">
+        <a href="men watches.html">
+            <div class="box01">
+                <img src="Image/home watches.jpg" alt="" height="290" width="290">
+                <h3>Blue Silicone Watch </h3>
+                <p> Multi Function Watches, Quartz, Quartz Watches, Round Dial, Silicone Strap.</p>
+        </a>
+    </div>
+    <a href="women watches .html">
+        <div class="box01">
+            <img src="Image/home watches 01.jpg" alt="" height="290" width="290">
+            <h3>Pierre Cardin Women’s </h3>
+            <p>Branded Cheap Watches, branded fashion Watches, Branded New Watches.</p>
+    </a>
+    </div>
+    <a href="kids watches.html">
+        <div class="box01">
+            <img src="Image/home watches 02.jpg" alt="" height="290" width="290">
+            <h3>Smart Watch D3 Max </h3>
+            <p>Put the watch close the wrist, and the best wearing position in the wrist bone above them arm the real
+                time</p>
+    </a>
+    </div>
+    </div>
+    <!-- watches End -->
+    <!--brands watches Start -->
+    <div class="head-clock">
+        <h2>BRANDS</h2>
+    </div>
+    <div class="brands-card">
+        <a href="michael kors.html">
+            <div class="box01">
+                <img src="Image/Michael Kors 01.jpg" alt="" height="290" width="290">
+                <h3>Guess Men’s Michael </h3>
+                <p> Our Gen 6 Camille smartwatch is equal parts high fashion and high tech.</p>
+        </a>
+    </div>
+    <a href="rolex watches.html">
+        <div class="box01">
+            <img src="Image/Rolex.jpg" alt="" height="290" width="290">
+            <h3>950 platinum rolex </h3>
+            <p>Platinum, considered the noblest of metals, is striking for its unique luminosity.</p>
+    </a>
+    </div>
+    <a href="citizen watches.html">
+        <div class="box01">
+            <img src="Image/citizen watches.jpg" alt="" height="290" width="290">
+            <h3>World Chronograph citizen </h3>
+            <p>Citizen Eco-Drive Radio-Controlled Chronograph World Timer</p>
+    </a>
+    </div>
+    </div>
+    <!-- watches End -->
+    <!--reveiw Start -->
+    <!-- Section Reviews Start -->
+    <section class="reviews" id="reviews">
+        <div class="main-txt">
+            <h2>What Custommers Say</h2>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <h5><img src="Image/pic-1.png" alt="">John</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Bought this watch on jet two in April and I think it is a load of rubbish the faces don't change it
+                    says you can customize and put your photos </p>
+            </div>
+            <div class="row">
+                <h5><img src="Image/pic-2.png" alt="">Nida</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Very unique timepiece.Lovely product made from recycled plastic which has a great look on the wrist.
+                </p>
+            </div>
+            <div class="row">
+                <h5><img src="Image/pic-3.png" alt="">Usman</h5>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>I brought this watch for work but to be honest it is far too good to wear to work, for the price I
+                    wasn’t expecting it to be as good</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section Reviews End -->
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+                <h3>Alberto Clocks</h3>
+                <li><a href="About Us .html">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="#">Term & Condition</a></li>
+            </div>
+            <div class="row">
+                <h3>Customer Service</h3>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Installments Plan</a></li>
+                <li><a href="#">E-Warranty Activation</a></li>
+            </div>
+            <div class="mag-bott">
+                <h3>Secure Payment Methods</h3>
+                <img src="Image/1 link.jpg" alt="" height="40" width="40">
+                <img src="Image/mastercard.jpg" alt="" height="40" width="40">
+                <img src="Image/visa.jpg" alt="" height="40" width="40">
+                <div class="socail-links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+    </footer>
+    <!-- footer end -->
+    <script async> const HOURHAND = document.querySelector("#hour");
+        const MINUTEHAND = document.querySelector("#minute");
+        const SECONDHAND = document.querySelector("#second");
+        var date = new Date();
+        console.log(date);
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
+        let hrPosition = (hr * 360 / 12) + (min * (360 / 60) / 12);
+        let minPosition = (min * 360 / 60) + (sec * (360 / 60) / 60);
+        let secPosition = sec * 360 / 60;
+        function runThetime() {
+            hrPosition = hrPosition + (3 / 360);
+            minPosition = minPosition + (6 / 60);
+            secPosition = secPosition + (6);
+            HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+            MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+            SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+        }
+        var interval = setInterval(runThetime, 1000);
+    </script>
+    <!-- clock counter end -->
+    <script src="js/bootstrap.js"></script>
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("on_load_counter", n);
+
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+    </script>
+</body>
+
+</html>

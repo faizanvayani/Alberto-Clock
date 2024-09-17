@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caramel&family=Chela+One&family=Diplomata&family=Ewert&family=Lumanosimo&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style .css">
+   
+</head>
+
+<body>
+    <!-- logo start -->
+    <div class="d-flex justify-content-around ms-3">
+        <a href="Home.html"> <img src="Image/logo.png" class="counter " alt
+                height="200px" width="200px"></a>
+        <div class="logo-head">
+
+            <div class="heading-name  ">ALBERTO CLOCK</div>
+        </div>
+        <!-- clock counter start -->
+        <div class="container">
+            <div class="row">
+                <div class="counter blue">
+
+                    <div class="clockbox">
+                        <svg id="clock" viewBox="0 0 600 600">
+                            <g id="face">
+                                <circle class="circle" cx="300" cy="300"
+                                    r="253.9" />
+                                <path class="hour-marks"
+                                    d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6" />
+                                <circle class="mid-circle" cx="300" cy="300"
+                                    r="16.2" />
+                            </g>
+                            <g id="hour">
+                                <path class="hour-arm" d="M300.5 298V142" />
+                                <circle class="sizing-box" cx="300" cy="300"
+                                    r="253.9" />
+                            </g>
+                            <g id="minute">
+                                <path class="minute-arm" d="M300.5 298V67" />
+                                <circle class="sizing-box" cx="300" cy="300"
+                                    r="253.9" />
+                            </g>
+                            <g id="second">
+                                <path class="second-arm" d="M300.5 350V55" />
+                                <circle class="sizing-box" cx="300" cy="300"
+                                    r="253.9" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="counter-icon">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="text-uppercase">Visiter counts</h3>
+                        <span class="counter-value" id="CounterVisitor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- clock counter end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bor text-center">
+        <div class="container-fluid text-center">
+            <div class="collapse navbar-collapse text-center"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item text-center">
+                        <a
+                            class="nav-link active nav-colour text-uppercase text-center"
+                            aria-current="page"
+                            href="Home.html">Home</a>
+                    </li>
+                    <!-- button wall clock -->
+                    <li class="nav-item dropdown text-center">
+                        <a
+                            class="nav-link text-uppercase text-center nav-colour text-nowrap"
+                            href="#"
+                            id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Wall Clock's
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="Analog Clock.html">Analog Clocks</a></li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="Digital Clock.html">Digital Clocks</a>
+                            </li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="Table Clock .html">Table clocks</a></li>
+                        </ul>
+                    </li>
+                    <!-- button wall clock -->
+                    <!-- watches button -->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link text-uppercase nav-colour text-nowrap"
+                            href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Watches
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="men watches.html">Mens</a></li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="women watches .html">Womens</a></li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="kids watches.html">Kids</a></li>
+                        </ul>
+                    </li>
+                    <!-- watches button -->
+                    <!-- gallary button -->
+                    <li class="nav-item ">
+                        <a class="nav-link nav-colour text-uppercase"
+                            href="Gallery.html">Gallery</a>
+                    </li>
+                    <!-- gallary button -->
+                    <!-- Brands button -->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link text-uppercase nav-colour text-nowrap"
+                            href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="michael kors.html">Michael Kors</a></li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="rolex watches.html">Rolex</a></li>
+                            <li><a class="dropdown-item text-uppercase"
+                                    href="citizen watches.html">Citizen
+                                    Eco-Drive</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Brands button -->
+                    <!-- comtact us -->
+                    <li class="nav-item text-center">
+                        <a class="nav-link nav-colour text-uppercase"
+                            href="Contact Us.html">Contact US</a>
+                    </li>
+                    <!-- comtact us -->
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-5 ser-box" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+  <!-- analog popup windowsstart -->
+  <div class="container-popup">
+
+    <h3 class="title"> Table Clock </h3>
+ 
+    <div class="products-container">
+ 
+       <div class="product" data-name="p-1">
+          <img src="Image/table clock 03.jpg" alt="">
+          <h3> Green Table Clock</h3>
+          <div class="price">$99.00</div>
+       </div>
+ 
+       <div class="product" data-name="p-2">
+          <img src="Image/table clock 05.jpg" alt="">
+          <h3>Bicycle Table Clock</h3>
+          <div class="price">$49.00</div>
+       </div>
+ 
+       <div class="product" data-name="p-3">
+          <img src="Image/table clock 07.jpg" alt="" >
+          <h3>Arrangement clock on table </h3>
+          <div class="price">$99.00</div>
+       </div>
+ 
+       <div class="product" data-name="p-4">
+          <img src="Image/table clock 09.jpg" alt="">
+          <h3>Propeller Alarm Clock </h3>
+          <div class="price">$699.00</div>
+       </div>
+ 
+       <div class="product" data-name="p-5">
+          <img src="Image/table clock 11.jpg" alt="">
+          <h3>Silver Twin Bell  Clock </h3>
+          <div class="price">$59.00</div>
+       </div>
+ 
+       <div class="product" data-name="p-6">
+          <img src="Image/table clock 13.jpg" alt="">
+          <h3>Mantel Table Clock </h3>
+          <div class="price">$259.00</div>
+       </div>
+ 
+    </div>
+ 
+ </div>
+ <!-- popup windows preview start -->
+ <div class="products-preview">
+ 
+    <div class="preview" data-target="p-1">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 04.jpg" alt="">
+       <h3> Green Table Clock</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+        Stylish 3d vision design Smart multi-function Adjustable brightness Energy saving Light sensing Hanging design 
+         Display Time/Date/Temperature/Alarm by turn.
+         Calendar From the Year 2000. 01. 01  the Year 2099.
+         LED Display Time/Date/Temperature By Turn.</p>
+       <div class="price">$99.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-2">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 06.jpg" alt="">
+       <h3>Bicycle Table Clock</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+        This LED display clock with large numbers is larger than the traditional wall clock
+       The digital wall clock can be switched to display 12 or 24 hours and ℉ or ℃ depending on your reading habits.
+       This LED clock featuring the type-c fast charging and 8000mAh battery that no need to replace the battery.
+       
+       </p>
+       <div class="price">$49.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-3">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 08.jpg" alt="">
+       <h3>Arrangement clock on table</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+          Mirror surface: glass is highly transparent, clear, translucent and easy to scrub.
+           Copper-covered pointer, balanced force and precise and silent movement.
+          Scan mute with low power consumption on time. Wall-mounting hole: convex type, strong bearing capacity, easy to fall off.
+         
+       </p>
+       <div class="price">$99.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-4">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 10.jpg" alt="">
+       <h3>Propeller Alarm  Clock </h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+         3D Wall Clock. 32 Inches Size
+         2mm Thick Acrylic. High Gloss Shiny Finish
+         Japanese Clock Module. DIY - Do it yourself type fun to install
+       </p>
+       <div class="price">$699.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-5">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 12.jpg" alt="">
+       <h3>Silver Twin Bell  Clock </h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+         Capture an old-time feel with the Oversized 31.50-Inch Henry Wall Clock. 
+          A handcrafted piece remnant of years back is captured with angular shapes on the white wood base
+         finished with black metal Roman numeral details.
+         You will be delighted with its beauty as you gaze up to see the time. 
+       </p>
+       <div class="price">$59.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-6">
+       <i class="fas fa-times"></i>
+       <img src="Image/table clock 14.jpg" alt="">
+       <h3>Mantel Table Clock</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>( 250 )</span>
+       </div>
+       <p>
+         Wall clock wood rustic
+          wall clock unique wooden
+         The clock is beautifully handcrafted as advertised.
+          
+       </p>
+       <div class="price">$259.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">Buy Now</a>
+          <a href="#" class="cart">Add To Cart</a>
+       </div>
+    </div>
+ 
+ </div>
+ <!-- popup windows preview end -->
+
+  <!-- analog popup windows end -->
+
+
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+                <h3>Alberto Clocks</h3>
+                <li><a href="About Us .html">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="#">Term & Condition</a></li>
+            </div>
+            <div class="row">
+                <h3>Customer Service</h3>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Installments Plan</a></li>
+                <li><a href="#">E-Warranty Activation</a></li>
+            </div>
+            <div class="mag-bott">
+                <h3>Secure Payment Methods</h3>
+                <img src="Image/1 link.jpg" alt="" height="40" width="40">
+                <img src="Image/mastercard.jpg" alt="" height="40" width="40">
+                <img src="Image/visa.jpg" alt="" height="40" width="40">
+                <div class="socail-links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+    </footer>
+
+    <!-- footer end -->
+    <script async> const HOURHAND = document.querySelector("#hour");
+        const MINUTEHAND = document.querySelector("#minute");
+
+        const SECONDHAND = document.querySelector("#second");
+
+        var date = new Date();
+        console.log(date);
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
+
+        let hrPosition = (hr * 360 / 12) + (min * (360 / 60) / 12);
+        let minPosition = (min * 360 / 60) + (sec * (360 / 60) / 60);
+        let secPosition = sec * 360 / 60;
+
+        function runThetime() {
+            hrPosition = hrPosition + (3 / 360);
+            minPosition = minPosition + (6 / 60);
+            secPosition = secPosition + (6);
+
+            HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+            MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+            SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+        }
+
+        var interval = setInterval(runThetime, 1000);
+        </script>
+
+            <!-- clock counter end -->
+            <script src="js/bootstrap.js"></script>
+
+            <script>
+        var n = localStorage.getItem('on_load_counter');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("on_load_counter", n);
+
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+
+    </script>
+
+            <!-- popup windows start -->
+
+            <script>
+    let preveiwContainer = document.querySelector('.products-preview');
+    let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+    document.querySelectorAll('.products-container .product').forEach(product => {
+        product.onclick = () => {
+            preveiwContainer.style.display = 'flex';
+            let name = product.getAttribute('data-name');
+            previewBox.forEach(preview => {
+                let target = preview.getAttribute('data-target');
+                if (name == target) {
+                    preview.classList.add('active');
+                }
+            });
+        };
+    });
+
+    previewBox.forEach(close => {
+        close.querySelector('.fa-times').onclick = () => {
+            close.classList.remove('active');
+            preveiwContainer.style.display = 'none';
+        };
+    });
+
+</script>
+
+
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

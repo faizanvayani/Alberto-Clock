@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around The World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caramel&family=Chela+One&family=Diplomata&family=Ewert&family=Lumanosimo&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Around The World.css">
+    
+</head>
+
+<body>
+     <!-- logo start -->
+   <div class="d-flex justify-content-around ms-3">
+    <a href="Home.html"> <img src="Image/logo.png" class="counter " alt="" height="200px" width="200px"></a>
+    <div class="logo-head">
+
+        <div class="heading-name  ">ALBERTO CLOCK</div>
+    </div>
+    <!-- clock counter start -->
+    <div class="container">
+        <div class="row">
+            <div class="counter blue">
+
+
+
+                <div class="clockbox">
+                    <svg id="clock" viewBox="0 0 600 600">
+                        <g id="face">
+                            <circle class="circle" cx="300" cy="300" r="253.9" />
+                            <path class="hour-marks"
+                                d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6" />
+                            <circle class="mid-circle" cx="300" cy="300" r="16.2" />
+                        </g>
+                        <g id="hour">
+                            <path class="hour-arm" d="M300.5 298V142" />
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                        </g>
+                        <g id="minute">
+                            <path class="minute-arm" d="M300.5 298V67" />
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                        </g>
+                        <g id="second">
+                            <path class="second-arm" d="M300.5 350V55" />
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="counter-icon">
+                </div>
+                <div class="counter-content">
+                    <h3 class="text-uppercase">Visiter counts</h3>
+                    <span class="counter-value" id="CounterVisitor"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- clock counter end -->
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-light nav-bor text-center">
+    <div class="container-fluid text-center">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item text-center">
+                    <a class="nav-link active nav-colour text-uppercase text-center" aria-current="page"
+                        href="Home.html">Home</a>
+                </li>
+                <!-- button wall clock -->
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link text-uppercase text-center nav-colour text-nowrap" href="#"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Wall Clock's
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-uppercase" href="Analog Clock.html">Analog Clocks</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="Digital Clock.html">Digital Clocks</a>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="Table Clock .html">Table clocks</a></li>
+                    </ul>
+                </li>
+                <!-- button wall clock -->
+                <!-- watches button -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Watches
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-uppercase" href="men watches.html">Mens</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="women watches .html">Womens</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="kids watches.html">Kids</a></li>
+                    </ul>
+                </li>
+                <!-- watches button -->
+                <!-- gallary button -->
+                <li class="nav-item ">
+                    <a class="nav-link nav-colour text-uppercase" href="Gallery.html">Gallery</a>
+                </li>
+                <!-- gallary button -->
+                <!-- Brands button -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase nav-colour text-nowrap" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Brands
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-uppercase" href="michael kors.html">Michael Kors</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="rolex watches.html">Rolex</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="citizen watches.html">Citizen
+                                Eco-Drive</a></li>
+
+                    </ul>
+                </li>
+                <!-- Brands button -->
+                <!-- comtact us -->
+                <li class="nav-item text-center">
+                    <a class="nav-link nav-colour text-uppercase" href="Contact Us.html">Contact US</a>
+                </li>
+                <!-- comtact us -->
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-5 ser-box" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- navbar end -->
+    
+  
+<!-- worldwide servies statetion -->
+<section class="services">
+    <div class="heading">
+        <h2 class="head-world">worldwide Service Center</h2>
+        <h3>USA</h3>
+    </div>
+    <img src="Image/usa.png" alt="" width="800px">
+    <div class="card-content">
+        <div class="row">
+            <div class="card-body">
+                <p>Miller’s Clock Service
+                    426 Broard St.
+                    Oshkosh, WI 54901
+                    Telephone: +1 414 235 4750</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>The Clockmaker Kenneth h. Fuhr
+                    9719 W.Coal Mine Ave. Suite J
+                    Littleton, CO 80123
+                    Telephone: +1 303 933 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Roseville Clock Shop
+                    28085 Gratiot Ave.
+                    Roseville, MI 48066
+                    Telephone: +1 586 772 5180</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <div class="row">
+            <div class="card-body">
+                <p>San Leandro Clock Shop
+                    1006 East 14th Street
+                    San Leandro, CA 94571
+                    Telephone: +1 510 635 3525</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>North Coast Imports
+                    74 Front Street
+                    Berea, OH 44017</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>McGuire’s Clocks
+                    4915 Airport Blvd.
+                    Austin, TX 78751
+                    Telephone: +1 512 452 4558</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="row">
+            <div class="card-body">
+                <p>The Clockworks
+                    Greg Jones
+                    6889 Peachtree Industrial Blvd.
+                    Norcross, GA 30092
+                    Telephone: +1 770 446 3553</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Anton Schneider Clock Service
+                    412 Main Street
+                    Avon-by-the-Sea, NJ, 07717
+                    Telephone: +1 908 988 1099</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Clock Shop LLC
+                    Keith Seabolt
+                    Cleveland, GA 30528
+                    Telephone: +1 706 219 3556</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="row">
+            <div class="card-body">
+                <p>Frankenmuth Clock Company
+                    966 S. Main Street
+                    Frankenmuth, MI 48734
+                    Telephone: +1 989 652 2933</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Clock Shop
+                    M. Manderville
+                    1534 South Hwy 129 Unit A
+                    Cleveland, GA 30528</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Fahrenholz Clock & Watch
+                    12552 Pointer P1
+                    Fishers, IN 46038 USA
+                    Telephone: +1 317-435-8305</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="Image/australia.jpg" alt="" width="800px">
+    <div class="heading">
+        <h3>AUSTRALIA</h3>
+    </div>
+    <div class="card-content">
+
+        <div class="row">
+            <div class="card-body">
+                <p>German Cuckoo Clock Nest
+                    Box 163
+                    143 Long Rd. Eagle Heights
+                    Queensland 4272
+                    Telephone: +61 7 5545 1334</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>THE GERMAN VILLAGE SHOP 
+                    Justin Lang
+                    50 Main Street
+                    Hahndorf, South Australia 5245
+                    Phone +61 8 8388 7324
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Clock Shop
+                    194 Main Street
+                    Montville Qld 4560
+                    Phone: +61 7 5442 9409
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <img src="Image/Canada img.jpg" alt="" width="800px">
+    <div class="heading">
+        <h3>CANADA</h3>
+    </div>
+    <div class="card-content">
+
+        <div class="row">
+            <div class="card-body">
+                <p>Direct Import
+                    301 Bank Street
+                    Ottawa, Ontario K2P 1X7</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Doctor Clock
+                    5656 Bilby Street
+                    Halifax, Nova Scotia B 3K 1V6
+                    Telephone: +1 902 422 1307
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Atelior Technique D’ Hologerie
+                    9 rue de la Ziegelau
+                    67100 Strasbourg
+                    Telephone: +33 3 8884 4885
+                    </p>
+            </div>
+        </div>
+    </div>
+   
+
+    <img src="Image/japan img.jpg" alt="" width="800px">
+    <div class="heading">
+        <h3>JAPAN</h3>
+    </div>
+    <div class="card-content">
+
+        <div class="row">
+            <div class="card-body">
+                <p>IDA Watsch Comp.
+                    5-196 Molomaschi
+                    Nakaku, Yokohama 231
+                    Telephone: +81 45 641 1212</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Morinotokei Co., Ltd.
+                    8-5 Nihonbashi Yokoyama-cho,
+                    Chou-ku
+                    Tokyo Japan
+                    www.morinotokei.com
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>WALD Ltd.
+                    Takahiro Hayashi
+                    3-2-18 Morigo, Nada
+                    6570028 Kobe, Hyogo
+                    </p>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="Image/italy.jpg" alt="" width="800px">
+    <div class="heading">
+        <h3>ITALY</h3>
+    </div>
+    <div class="card-content">
+
+        <div class="row">
+            <div class="card-body">
+                <p>Ditta Giorgetta
+                    Via Monte Piana 23
+                    32040 Misurino/Belluno
+                    Telephone: +39 436 39037</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Orologeria Marenga
+                    Piazza degli Artiglieri, 3
+                    00143 Roma (IT)
+                    Telefon: +39 339 6079397
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-body">
+                <p>Kresern S.A. Reojes de Cuco
+                    Martinez 22
+                    28093 Madrid
+                    Telephone: +34 571 3216
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- worldwide servies statetion -->
+
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+                <h3>Alberto Clocks</h3>
+                <li><a href="About Us .html">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="#">Term & Condition</a></li>
+            </div>
+            <div class="row">
+                <h3>Customer Service</h3>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Installments Plan</a></li>
+                <li><a href="#">E-Warranty Activation</a></li>
+            </div>
+            <div class="mag-bott">
+                <h3>Secure Payment Methods</h3>
+                <img src="Image/1 link.jpg" alt="" height="40" width="40">
+                <img src="Image/mastercard.jpg" alt="" height="40" width="40">
+                <img src="Image/visa.jpg" alt="" height="40" width="40">
+                <div class="socail-links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+    </footer>
+    <!-- footer end -->
+    <script async> const HOURHAND = document.querySelector("#hour");
+        const MINUTEHAND = document.querySelector("#minute");
+
+        const SECONDHAND = document.querySelector("#second");
+
+        var date = new Date();
+        console.log(date);
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
+
+        let hrPosition = (hr * 360 / 12) + (min * (360 / 60) / 12);
+        let minPosition = (min * 360 / 60) + (sec * (360 / 60) / 60);
+        let secPosition = sec * 360 / 60;
+
+        function runThetime() {
+            hrPosition = hrPosition + (3 / 360);
+            minPosition = minPosition + (6 / 60);
+            secPosition = secPosition + (6);
+
+            HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+            MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+            SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+        }
+
+        var interval = setInterval(runThetime, 1000);
+        </script>
+  
+    <!-- clock counter end -->
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("on_load_counter", n);
+
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+
+    </script>
+</body>
+
+</html>
